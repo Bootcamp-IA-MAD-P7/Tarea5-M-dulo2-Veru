@@ -14,13 +14,13 @@
 [5. Algoritmos: K-Means, Clustering Jerárquico (Aglomerativo), DBSCAN, Gaussian Mixture Models (GMM)](https://github.com/Bootcamp-IA-MAD-P7/Tarea5-M-dulo2-Veru#5-explica-brevemente-los-siguientes-algoritmos)
 
    
-## 1. ¿Qué es el aprendizaje no supervisado y qué es un algoritmo de clustering? ¿En qué se diferencia del aprendizaje supervisado y cuál es su propósito?
+# 1. ¿Qué es el aprendizaje no supervisado y qué es un algoritmo de clustering? ¿En qué se diferencia del aprendizaje supervisado y cuál es su propósito?
 
 El aprendizaje no supervisado, también conocido como machine learning no supervisado, utiliza algoritmos de machine learning (ML) para analizar y agrupar conjuntos de datos sin etiquetar. Estos algoritmos descubren patrones ocultos o agrupaciones de datos sin necesidad de intervención humana.
 
 La capacidad del aprendizaje no supervisado para descubrir similitudes y diferencias en la información lo convierte en la solución ideal para el análisis exploratorio de datos , las estrategias de venta cruzada, la segmentación de clientes y el reconocimiento de imágenes.
 
-# Algoritmo de clustering
+## Algoritmo de clustering
 
 El clustering es un algoritmo de machine learning no supervisado que organiza y clasifica diferentes objetos, puntos de datos u observaciones en grupos o clústeres basados en similitudes o patrones.
 
@@ -34,7 +34,7 @@ El clustering también se puede utilizar para reducir la complejidad de grandes 
 
 Los algoritmos de clustering se distinguen a veces por realizar un clustering duro, en el que cada punto de datos pertenece a un único cluster y tiene un valor binario de estar o no en un cluster, o por realizar un clustering blando, en el que cada punto de datos recibe una probabilidad de pertenecer a cada cluster identificado. No existe un mejor proceso de clustering; deberá elegir el enfoque que tenga más sentido para sus necesidades y los datos con los que está trabajando.
 
-# Diferencia del aprendizaje supervisado
+## Diferencia del aprendizaje supervisado
 
 El aprendizaje no supervisado y el aprendizaje supervisado se analizan juntos con frecuencia. A diferencia de los algoritmos de aprendizaje no supervisado, los algoritmos de aprendizaje supervisado utilizan datos etiquetados. A partir de esos datos, predice resultados futuros o asigna datos a categorías específicas en función del problema de regresión o clasificación que está tratando de resolver.
 
@@ -42,9 +42,9 @@ Si bien los algoritmos de aprendizaje supervisado tienden a ser más precisos qu
 
 
 
-## 2. Explique la diferencia conceptual entre el clustering basado en centroides (particional) y el clustering jerárquico, mencionando un algoritmo representativo de cada enfoque.
+# 2. Explique la diferencia conceptual entre el clustering basado en centroides (particional) y el clustering jerárquico, mencionando un algoritmo representativo de cada enfoque.
 
-# Clustering basado en centroides
+## Clustering basado en centroides
 
 El clustering basado en centroides es un tipo de método de clustering que divide o divide un conjunto de datos en grupos similares en función de la distancia entre sus centroides. El centroide de cada clúster es la media o la mediana de todos los puntos del clúster, en función de los datos.
 
@@ -57,40 +57,40 @@ Clustering jerárquico
 El clustering jerárquico, a veces denominado clustering basado en la conectividad, agrupa los puntos de datos en función de la proximidad y la conectividad de sus atributos. Este método determina los clústeres en función de la proximidad de los puntos de datos entre sí en todas las dimensiones. La idea es que los objetos que están más cerca están más estrechamente relacionados que los que están lejos unos de otros. A diferencia de las medias k, no es necesario especificar previamente el número de clústeres. En su lugar, el algoritmo de clustering crea una red de grafos de los clústeres en cada nivel jerárquico. Esta red es jerárquica, lo que significa que cualquier nodo dado en ella solo tiene un nodo principal, pero puede tener varios nodos secundarios. Los clústeres jerárquicos se pueden representar gráficamente con un dendrograma para ayudar a resumir y organizar visualmente los clústeres detectados y la jerarquía que pueden contener.
 
 
-## 3. ¿En qué consiste el clustering basado en densidad (como DBSCAN) y cómo difiere su enfoque del clustering basado en centroides y del jerárquico?
+# 3. ¿En qué consiste el clustering basado en densidad (como DBSCAN) y cómo difiere su enfoque del clustering basado en centroides y del jerárquico?
 
-# Clustering basado en densidad
+## Clustering basado en densidad
 
 El clustering basado en la densidad funciona mediante la detección de áreas donde se concentran puntos y donde están separados por áreas que están vacías o escasas. A diferencia de los enfoques basados en centroides, como las medias K, o los enfoques basados en la distribución, como la maximización de expectativas el clustering basado en la densidad puede detectar clústeres de una forma arbitraria. Esto puede ser extremadamente útil cuando los clústeres no están definidos en torno a una ubicación o distribución específica. A diferencia de otros algoritmos de agrupamiento, como las medias K y el clustering jerárquico, un algoritmo basado en la densidad puede descubrir clústeres de cualquier forma, tamaño o densidad en sus datos. El clustering basado en la densidad también puede distinguir entre los puntos de datos que forman parte de un clúster y los que deben etiquetarse como ruido. El clustering basado en la densidad es especialmente útil cuando se trabaja con conjuntos de datos con ruido o valores atípicos o cuando no tenemos conocimiento previo sobre el número de clústeres en los datos.
 
 
-## 4. ¿Por qué es importante elegir correctamente el número de clusters o los hiperparámetros de un algoritmo de clustering? Explica al menos dos métodos para evaluar la calidad de un agrupamiento (por ejemplo, el método del codo y el coeficiente de silueta).
+# 4. ¿Por qué es importante elegir correctamente el número de clusters o los hiperparámetros de un algoritmo de clustering? Explica al menos dos métodos para evaluar la calidad de un agrupamiento (por ejemplo, el método del codo y el coeficiente de silueta).
 
 Uno de los problemas que nos encontramos a la hora de aplicar alguno de los métodos de Clustering (K-means o EM) es la elección del número de Clusters. No existe un criterio objetivo ni ampliamente válido para la elección de un número óptimo de Clusters; pero tenemos que tener en cuenta, que una mala elección de los mismos puede dar lugar a realizar agrupaciones de datos muy heterogéneos (pocos Clusters); o datos, que siendo muy similares unos a otros los agrupemos en Clusters diferentes (muchos Clusters).
 
 Aunque no exista un criterio objetivo para la selección del número de Clusters, si que se han implementado diferentes métodos que nos ayudan a elegir un número apropiado de Clusters para agrupar los datos; como son, el método del codo (elbow method), el criterio de Calinsky, el Affinity Propagation (AP), el Gap (también con su versión estadística), Dendrogramas, etc.
 
-# Método del codo
+## Método del codo
 
 El Método del codo es una técnica de evaluación para elegir el número de clústeres k en algoritmos de agrupamiento como K-means. La idea central es medir la pérdida o error dentro de cada clúster a medida que aumentamos k y buscar un “codo” en la curva que represente el punto de diminishing returns. A partir de ese punto, añadir más clústeres ofrece mejoras marginales y, por lo general, no justifica la complejidad adicional.
 
 En palabras simples, el Método del codo asume que cuando el número de clústeres es demasiado bajo, la agrupación es demasiado general y hay mucha variabilidad dentro de cada clúster. A medida que aumentamos k, esa variabilidad interna se reduce rápidamente hasta que la curva se aplanada y el ahorro ya no es significativo. Identificar ese codo nos da una guía práctica para seleccionar un k razonable.
 
-# Coeficiente de silueta
+## Coeficiente de silueta
 
 El coeficiente de silueta representa una de las métricas de validación interna más fundamentales en aprendizaje no supervisado, diseñada específicamente para cuantificar objetivamente la calidad de agrupamientos generados por algoritmos de clustering. Teóricamente, esta métrica aborda el problema fundamental de evaluar particiones de datos sin acceso a etiquetas verdaderas, situación inherente a problemas no supervisados. A diferencia de métricas supervisadas que comparan predicciones contra ground truth, el coeficiente de silueta evalúa estructura intrínseca mediante análisis geométrico de distancias entre puntos. La métrica sintetiza dos conceptos geométricos complementarios: qué tan compactos son los clusters internamente y qué tan separados están entre sí. Esta dualidad captura esencia de clustering de calidad donde puntos similares agrupan densamente mientras grupos diferentes mantienen distancia. El resultado es valor escalar en rango [-1, 1] que resume calidad completa de partición mediante promediación de evaluaciones individuales por muestra.
 
-# Dendrogramas
+## Dendrogramas
 
 Un dendrograma es un tipo de representación gráfica en forma de árbol que organiza y agrupa los datos en subcategorías según su similitud; dada por alguna medida de distancia. Los objetos similares se representan en el dendrograma por medio de un enlace cuya posición está determinada por el nivel de similitud entre los objetos o grupos de objetos. Dadas estas características, hace que los dendrogramas sean un tipo de diagrama muy útil para estudiar las agrupaciones de objetos; es decir, para estudiar los Clusters que pueden darse en un data set.
 
-# Gap
+## Gap
 
 Similar al método del codo, cuya finalidad es la de encontrar la mayor diferencia o distancia que hay entre los diferentes grupos de objetos que vamos formando para representarlos en un dendrograma. Para ello vamos cogiendo las distancias que hay de cada uno de los enlaces que forman el dendrograma y vemos cual es la mayor diferencia que hay entre cada uno de estos enlaces.
 
-## 5. Explica brevemente los siguientes algoritmos:
+# 5. Explica brevemente los siguientes algoritmos:
 
-# K-Means
+## K-Means
 
 K-Means Grupos de agrupación de datos similares en clusters sin necesidad de datos etiquetados. Se utiliza para descubrir patrones ocultos cuando el objetivo es organizar los datos en función de la similitud.
 
@@ -99,7 +99,7 @@ K-Means Grupos de agrupación de datos similares en clusters sin necesidad de da
     Comúnmente utilizado en la segmentación de clientes, compresión de imágenes y descubrimiento de patrones
     Útil cuando necesita estructura a partir de datos crudos y no organizados
 
-# Clustering Jerárquico 
+## Clustering Jerárquico 
 
 Existen dos enfoques para realizar el análisis jerárquico de clústeres:
 
@@ -107,7 +107,7 @@ Existen dos enfoques para realizar el análisis jerárquico de clústeres:
 
 - Divisivo: en los métodos de clustering jerárquico divisivo, un enfoque descendente divide sucesivamente los puntos de datos en una estructura arborescente. El primer paso es dividir el conjunto de datos en clústeres utilizando un método de clustering plano como medias k. A continuación, los clústeres con la mayor suma de errores al cuadrado (SSE) se particionan aún más mediante un método de clustering plano. El algoritmo se detiene cuando alcanza nodos individuales o un SSE mínimo. La partición divisoria permite una mayor flexibilidad tanto en términos de la estructura jerárquica del árbol como del nivel de equilibrio en los diferentes clústeres. No es necesario tener un árbol perfectamente equilibrado en cuanto a las profundidades de los diferentes nudos o un árbol en el que el grado de cada rama es exactamente dos. Esto permite la construcción de una estructura de árbol que admite diferentes compensaciones en el equilibrio de las profundidades de los nodos y los pesos de los nodos (número de puntos de datos en el nodo). El clustering jerárquico divisivo puede ser más rápida que el clustering jerárquico aglomerativo, especialmente cuando los datos no requieren construir el árbol hasta los puntos de datos individuales.
 
-# DBSCAN
+## DBSCAN
 
 DBSCAN es un ejemplo de un algoritmo de clustering que adopta un enfoque basado en la densidad para la agrupación. Utiliza un enfoque de clustering espacial basado en la densidad para crear clústeres con una densidad pasada por el usuario que se centra en un centroide espacial. El área inmediatamente alrededor del centroide se denomina vecindad y DBSCAN intenta definir las vecindades de los clústeres que tienen la densidad especificada. Para cada clúster, DBSCAN definirá tres tipos de puntos de datos:
 
@@ -119,7 +119,7 @@ Valor atípico: un punto de datos es un valor atípico si no es ni un punto cent
 
 HDBSCAN es una variante de DBSCAN que no requiere la configuración de ningún parámetro, lo que puede hacerla aún más flexible que la original. HDBSCAN es menos sensible al ruido y los valores atípicos de los datos. Además, DBSCAN a veces puede tener problemas para identificar clústeres con densidad no uniforme. Esta fue una de las principales motivaciones de HDBSCAN y, por lo tanto, maneja clústeres de densidad variable de manera mucho más efectiva.
 
-# Gaussian Mixture Models (GMM)
+## Gaussian Mixture Models (GMM)
 
 El modelo de mezcla gaussiana (GMM) es una técnica de agrupamiento probabilístico que modela los datos como una combinación de múltiples distribuciones gaussianas, lo que permite una agrupación más flexible de puntos de datos.
 
