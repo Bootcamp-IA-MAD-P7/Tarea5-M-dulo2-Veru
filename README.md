@@ -1,2 +1,2 @@
-# Tarea5-M-dulo2-Veru
+# Tarea5-Modulo2-Veru
 Investigación y Desarrollo sobre Algoritmos de Clustering
