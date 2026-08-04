@@ -135,3 +135,4 @@ Bibliografía
 - https://jarroba.com/seleccion-del-numero-optimo-clusters/ 
 - https://datasciencepythonblog.net/silhouette-score-scikit-learn/
 - https://www.geeksforgeeks.org/machine-learning/k-means-clustering-introduction/ 
+- https://www.geeksforgeeks.org/machine-learning/gaussian-mixture-model/
